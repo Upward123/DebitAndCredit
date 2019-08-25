@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 导航栏开始 */
+.nav-box {
+    width: 100%;
+    height: 40px;
+    background-color: #000;
+}
+
+.nav {
+    width: 1120px;
+    margin: 0 auto;
+    line-height: 40px;
+}
+
+.nav li {
+    float: right;
+    margin-left: 50px;
+}
+
+.nav li a {
+    font-size: 14px;
+    color: #fff;
+}
+
+/* 导航栏结束 */
+
+/* 登录页面开始 */
+
+.page-title-box {
+    width: 100%;
+    height: 66px;
+    line-height: 70px;
+    background-color: #f8f8f8;
+    border: 2px solid #e7e7e7;
+}
+
+.page-title {
+    width: 1120px;
+    height: 66px;
+    margin: 0 auto;
+}
+
+.page-title p {
+    color: #337ab7;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* 登录表单开始 */
+.register-box {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.in {
+    width: fit-content;
+    text-align: center;
+    line-height: 70px;
+    color: #999;
+    font-size: 18px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.input-box>div:last-child {
+    margin-left: -17px;
+}
+
+.input-box>div:last-child .tip{
+    margin: 0 0 20px 95px;
+}
+
+.input-box input {
+    margin: 0px 0 0 30px;
+    width: 220px;
+    height: 35px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #e7e7e7;
+}
+
+.input-box input:focus {
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+
+.input-box .tip {
+    margin: 0 0 20px 80px;
+    color: #999;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.register-btn {
+    /* text-align: center; */
+    margin-left: 160px;
+}
+
+.register-btn input {
+    width: 120px;
+    height: 35px;
+    background-color: #5cb85c;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 35px;
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.register-btn a {
+    font-size: 14px;
+}
+
+/* 一些开始是隐藏着的样式 */
+
+.input-box .err-tip {
+     font-size: 14px;
+     margin-left: 5px;
+     display: none;
+ }
+
+.input-box .err-style {
+    color: red;
+    /* box-shadow: 0 0 10px red;  */
+}
+
+.input-box .err-input-style {
+    /* color: red; */
+    box-shadow: 0 0 10px red;
+}
+
+/* 登录页面结束 */

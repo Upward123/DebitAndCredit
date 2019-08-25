@@ -1,0 +1,192 @@
+.right-box2 {
+    width: 840px;
+    /* border-radius: 5px; */
+    /* border: 1px solid #e7e7e7; */
+}
+
+/* 查询条件 部分开始 */
+.query-box {
+    width: 840px;
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.query-box span {
+    margin-right: 5px;
+    font-weight: 700;
+}
+
+#login-log-endDate {
+    margin-right: 10px;
+}
+
+.query-box input,
+.query-box select {
+    color: #666;
+    font-size: 14px;
+    line-height: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    border: 1px solid #DFDFDF;
+}
+
+/*在css样式中设置focus，对于浏览器自带的日期选择框的下拉三角形无效*/
+/*.query-box input:focus,*/
+/*.query-box select:focus {*/
+/*    border: 2px solid #9ecaed;*/
+/*    !*box-shadow: 0 0 5px #337ab7;*!*/
+/*}*/
+
+.query-box input {
+    margin-right: 5px;
+}
+
+/*----------用来移除向下箭头----------*/
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    /*visibility: hidden;*/
+    background-color: #fff;
+    border: none;
+    outline: none;
+}
+ 
+/*----------用来移除上下箭头----------*/
+input[type="date"]::-webkit-inner-spin-button {
+	display: none;
+	}
+ 
+/*----------用来移除叉叉按钮----------*/
+input[type="date"]::-webkit-clear-button{
+   display:none;
+}
+
+.query-box button {
+    margin-left: 10px;
+    line-height: 30px;
+    height: 30px;
+    padding: 0 10px;
+    background-color: #449D44;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+/* 查询条件 部分结束 */
+
+/* 登录日志部分开始 */
+
+.show-log-box {
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #e7e7e7;
+    font-size: 14px;
+}
+
+.show-log-box .log-title {
+    line-height: 40px;
+    height: 40px;
+    padding-left: 20px;
+    color: #666;
+    background-color: #F5F5F5;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+/* table 部分开始 */
+
+table {
+    border-spacing: 0;
+    font-size: 14px;
+}
+
+thead {
+    font-weight: 700;
+}
+
+tbody {
+    color: #666;
+}
+
+.show-log-box .log-body tr {
+    display: flex;
+    flex-direction: row;
+    width: 830px;
+    justify-content: space-around;
+    padding-left: 10px;
+    border-bottom: 1px solid #e7e7e7;
+    line-height: 30px;
+    height: 30px;
+}
+
+.show-log-box .log-body tr:last-child {
+    border: 0;
+}
+
+.show-log-box tbody tr:nth-child(odd) {
+    background-color: #F5F5F5;
+}
+
+.show-log-box .log-body tr td {
+    flex: 1;
+}
+
+/* table 部分结束 */
+
+/* 分页按钮部分开始 */
+.show-log-box .paging-box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px auto;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+    width: fit-content;
+    /*min-width: 253px;*/
+    /*max-width: 420px;*/
+    font-size: 14px;
+    color: #337AB7;
+}
+
+.show-log-box .paging-box .page-active {
+    color: #fff;
+    background-color: #337AB7;
+}
+
+.show-log-box .paging-box #log-pages {
+    font-size: 0;
+    /*控制页数的展示，当总页数超过一定数量时，隐藏后面的部分 保证 页码栏 格式不乱*/
+    /*最多仅允许显示到 15 页，
+     1-9 页每个span 宽度为29.22，10-15 页每个span宽度为 37.42*/
+    max-width: 488px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.show-log-box .paging-box span {
+    padding: 5px 10px;
+    border-right: 1px solid #e7e7e7;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.show-log-box .paging-box span:hover {
+    background-color: #337ab7;
+    color: #fff;
+}
+
+.show-log-box .paging-box>span:last-child {
+    border: 0;
+}
+
+
+
+/* 分页按钮部分结束 */
+
+/* 登录日志部分结束 */
+

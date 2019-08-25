@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/register.css">
+    <title>register</title>
+</head>
+<body>
+    <!-- 导航栏开始 -->
+    <div class="nav-box">
+        <div class="nav">
+            <ul>
+                <li><a href="javascript:;">帮助</a></li>
+                <li><a href="login.html">登录</a></li>
+                <li><a href="javascript:;">首页</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 导航栏结束 -->
+    
+    <!-- 注册页面开始 -->
+    <div class="page-title-box">
+        <div class="page-title">
+            <p>用户注册</p>
+        </div>
+    </div>
+    <div class="register-box">
+<!--        <form action="./LR/register.do">-->
+            <div class="in">请填写注册信息，点击“提交注册”即可完成注册！</div>
+            <div class="input-box">
+                <div id="unm">
+                    <span class="">用户名</span><input id="username" class="" type="text"><span class="err-tip err-style">该用户名已存在</span>
+                    <div class="tip">用户名为4~16位字母，数字，符号或中文</div>
+                </div>
+                <div id="pwd">
+                    <span>密&emsp;码</span><input id="password" type="password"><span class="err-tip">请正确填写密码</span>
+                    <div class="tip">密码为4~16位字符组成,采用数字、字母、符号安全性更高</div>
+                </div>
+                <div id="subpwd">
+                    <span>确认密码</span><input type="password"><span class="err-tip">请确认两次密码是否一致</span>
+                    <div class="tip">请再次填写密码</div>
+                </div>
+            </div>
+            <div class="register-btn">
+                <input id="reg" type="submit" value="同意协议并注册">
+                <div><a href="./login.html">已有账号，马上登录</a></div>
+            </div>
+<!--        </form>-->
+    </div>
+    <!-- 注册页面结束 -->
+
+    <script src="./js/jquery-1.11.3.js"></script>
+    <script src="./js/register.js"></script>
+</body>
+</html>

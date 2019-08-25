@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*width: 100%;*/
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 导航栏开始 */
+.nav-box {
+    width: 100%;
+    height: 40px;
+    background-color: #000;
+}
+
+.nav {
+    width: 1120px;
+    margin: 0 auto;
+    line-height: 40px;
+}
+
+.nav li {
+    float: right;
+    margin-left: 50px;
+}
+
+.nav li a {
+    font-size: 14px;
+    color: #fff;
+}
+
+/* 导航栏结束 */
+
+/* 次级导航栏开始 */
+
+.page-title-box {
+    width: 100%;
+    height: 66px;
+    line-height: 70px;
+    background-color: #f8f8f8;
+    border: 2px solid #e7e7e7;
+}
+
+.page-title {
+    width: 1120px;
+    height: 66px;
+    margin: 0 auto;
+}
+
+.page-title li {
+    float: left;
+    line-height: 66px;
+    padding: 0 20px;
+    font-size: 16px;
+    color: #666;
+    cursor: pointer;
+}
+
+.page-title li:hover {
+    background-color: #eee;
+}
+
+.page-title .page-title-selected:hover {
+    background-color: #ccc;
+}
+
+.page-title .page-title-selected {
+    background-color: #ccc;
+}
+
+/* 次级导航栏结束 */
+
+/* 主体部分开始 */
+.body-box {
+    width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+/* 左边部分开始 */
+.slide-box {
+    width: 250px;
+}
+
+.slide-box dl {
+    width: 250px;
+    font-size: 14px;
+    color: #337AB7;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+}
+
+.slide-box dl dt {
+    background-color: #F5F5F5;
+    line-height: 40px;
+    padding-left: 20px;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    cursor: pointer;
+}
+
+.slide-box dl dt:first-child {
+    border-radius: 5px 5px 0 0;
+}
+
+.slide-box dl dd {
+    background-color: #fff;
+    line-height: 40px;
+    padding-left: 40px;
+    cursor: pointer;
+    /* dd 被选中后的颜色 */
+    /* background-color: #337AB7; */
+}
+
+.slide-box dl dd:hover {
+    background-color:#337AB7;
+    color:#fff
+}
+
+.slide-box .slide-selected {
+    background-color:#337AB7;
+    color:#fff;
+}
+/* 左边部分结束 */
+
+/* 右边部分开始 */
+
+/*个人信息的右边开始*/
+.right-box {
+    width: 800px;
+    border-radius: 5px;
+    border: 1px solid #e7e7e7;
+    padding: 20px;
+}
+
+/* 第一部分 */
+.right-box .first-part {
+    border-bottom: 2px solid #efefef;   
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.right-box .avator {
+    padding: 10px;
+    border: 1px solid #ebebeb;
+    margin-right: 20px;
+}
+
+.right-box .avator img {
+    width: 160px;
+    height: 220px;
+}
+
+.right-box .userinfo div {
+    line-height: 30px;
+}
+
+.right-box .userinfo div span {
+    font-size: 14px;
+}
+
+.right-box .userinfo div:last-child {
+    margin: 50px 0 0 80px;
+}
+
+.right-box .userinfo div:last-child button {
+    padding: 10px;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    letter-spacing: 2px;
+    border-radius: 10px;
+}
+
+.right-box .userinfo .pay {
+    background-color: #337AB7;
+}
+
+.right-box .userinfo .get {
+    background-color: #f00;
+}
+
+/* 第二部分 */
+/* 清除浮动的样式 */
+.clearfix:before, .clearfix:after {
+    display: table;
+    content:"";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.right-box .second-part {
+    border-bottom: 2px solid #efefef;   
+    padding: 10px 40px;
+}
+
+.right-box .second-part li {
+    line-height: 40px;
+    width: 220px;
+    float: left;
+}
+
+.right-box .second-part li span {
+    color: #337AB7;
+}
+
+/* 第三部分 */
+.right-box .third-part li {
+    width: 260px;
+    height: 110px;
+    float: left;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.third-top>div {
+    float: left;
+}
+
+.third-top img {
+    width: 60px;
+    height: 50px;
+    margin: 0 10px;
+}
+
+.third-top .third-title {
+    font-weight: 900;
+    line-height: 25px;
+}
+
+.third-top .third-content {
+    line-height: 25px;
+    color: #666;
+}
+
+.third-top .third-content a {
+    color: #337AB7;
+}
+
+.third-bottom {
+    margin: 10px 0 0 15px;
+    font-size: 12px;
+    color: #666;
+}
+
+/*个人信息的右边结束*/
+
+/* 个人资料的右边开始 */
+
+.right-box1 {
+    width: 840px;
+    border-radius: 5px;
+    border: 1px solid #e7e7e7;
+    /* padding: 20px; */
+}
+
+.right-box1 .msg-title {
+    width: 820px;
+    background-color: #F5F5F5;
+    line-height: 40px;
+    padding-left: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.right-box1 .msg-content-item>div {
+    float: left;
+}
+
+.right-box1 .msg-content-item .item-name {
+    line-height: 40px;
+    height: 40px;
+    width: 200px;
+    margin-right: 20px;
+    text-align: right;
+    font-size: 14px;
+}
+
+.right-box1 .msg-content-item .item-content {
+    line-height: 40px;
+    color: #666;
+    font-size: 14px;
+}
+
+.right-box1 .item-content input {
+    border: 1px solid #e7e7e7;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    padding-left: 10px;
+    line-height: 30px;
+    color: #666;
+}
+
+.right-box1 .item-content select {
+    border: 1px solid #e7e7e7;
+    width: 150px;
+    border-radius: 5px;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+    color: #666;
+}
+
+.right-box1 .item-content select option {
+    background-color: #fff;
+    border: none;
+    color: #666;
+    outline: none;
+}
+
+.right-box1 .item-content input:focus,
+.right-box1 .item-content select:focus {
+    box-shadow: 0 0 10px #9ecaed;
+    border-color: #9ecaed;
+    outline: none;
+}
+
+.right-box1 .msg-content-item .save-btn {
+    width: 150px;
+    line-height: 50px;
+    text-align: center;
+    position: relative;
+}
+
+.right-box1 .msg-content-item .save-btn button {
+    margin: 0 auto;
+    padding: 5px 10px;
+    background-color: #337AB7;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.save-btn #save-success-kuang,
+.save-btn #save-fail-kuang {
+    display: none;
+    position: absolute;
+    top: -100px;
+    width: 90px;
+    height: 80px;
+    padding: 10px 30px;
+    background-color: #9ecaed;
+    border-radius: 20px;
+}
+
+.save-btn #save-success-kuang span,
+.save-btn #save-fail-kuang span {
+    display: block;
+    height: 45px;
+    color: #fff;
+}
+
+.save-btn #save-success-kuang span:first-child{
+    font-size: 50px;
+    margin-bottom: -5px;
+}
+
+.save-btn #save-fail-kuang span:first-child {
+    font-size: 30px;
+    margin-bottom: -5px;
+}
+
+/* 个人资料的右边结束 */
+
+/* 右边部分结束 */
+
+/* 主题部分结束 */

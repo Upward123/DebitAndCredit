@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*width: 100%;*/
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* 清除浮动的样式 */
+.clearfix:before, .clearfix:after {
+    display: table;
+    content:"";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* 导航栏开始 */
+.nav-box {
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+}
+
+.nav {
+    width: 1120px;
+    margin: 0 auto;
+    line-height: 40px;
+}
+
+.nav li {
+    float: right;
+    margin-left: 50px;
+}
+
+.nav li a {
+    font-size: 14px;
+    color: #337ab7;
+}
+
+/* 导航栏结束 */
+
+/* 主体部分开始 */
+.body-box {
+    width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+/* 左边部分开始 */
+.slide-box {
+    width: 250px;
+}
+
+.slide-box dl {
+    width: 250px;
+    font-size: 14px;
+    color: #337AB7;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+}
+
+.slide-box dl dt {
+    background-color: #F5F5F5;
+    line-height: 40px;
+    padding-left: 20px;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    cursor: pointer;
+}
+
+.slide-box dl dt:first-child {
+    border-radius: 5px 5px 0 0;
+}
+
+.slide-box dl dd {
+    background-color: #fff;
+    line-height: 40px;
+    padding-left: 40px;
+    cursor: pointer;
+    /* dd 被选中后的颜色 */
+    /* background-color: #337AB7; */
+}
+
+.slide-box dl dd:hover {
+    background-color:#337AB7;
+    color:#fff
+}
+
+.slide-box .slide-selected {
+    background-color:#337AB7;
+    color:#fff;
+}
+/* 左边部分结束 */
+
+/* 右边部分开始 */
+
+/*个人信息的右边开始*/
+.right-box {
+    width: 840px;
+    border-radius: 5px;
+    /*border: 1px solid #e7e7e7;*/
+    margin-top: 20px;
+}
+
+.user-query-title {
+    font-size: 20px;
+    line-height: 40px;
+    height: 40px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+/* 登录日志部分开始 */
+
+.show-log-box {
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 1px solid #e7e7e7;
+    font-size: 14px;
+}
+
+/* table 部分开始 */
+
+table {
+    border-spacing: 0;
+    font-size: 14px;
+}
+
+thead {
+    font-weight: 700;
+}
+
+tbody {
+    color: #666;
+}
+
+.show-log-box .log-body tr {
+    display: flex;
+    flex-direction: row;
+    width: 830px;
+    justify-content: space-around;
+    padding-left: 10px;
+    border-bottom: 1px solid #e7e7e7;
+    line-height: 30px;
+    height: 30px;
+}
+
+.show-log-box tbody tr:last-child {
+    border: 0;
+}
+
+/*.show-log-box tbody tr:nth-child(odd) {*/
+/*    background-color: #F5F5F5;*/
+/*}*/
+
+.show-log-box .log-body tr td {
+    flex: 1;
+}
+
+/* table 部分结束 */
+
+/* 分页按钮部分开始 */
+.show-log-box .paging-box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px auto;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+    width: fit-content;
+    /*min-width: 253px;*/
+    /*max-width: 420px;*/
+    font-size: 14px;
+    color: #337AB7;
+}
+
+.show-log-box .paging-box .page-active {
+    color: #fff;
+    background-color: #337AB7;
+}
+
+.show-log-box .paging-box #log-pages {
+    font-size: 0;
+}
+
+.show-log-box .paging-box span {
+    padding: 5px 10px;
+    border-right: 1px solid #e7e7e7;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.show-log-box .paging-box span:hover {
+    background-color: #337ab7;
+    color: #fff;
+}
+
+.show-log-box .paging-box>span:last-child {
+    border: 0;
+}
+
+
+
+/* 分页按钮部分结束 */
+
+/* 登录日志部分结束 */
+
+
+
+/* 右边部分结束 */
+
+/* 主题部分结束 */
